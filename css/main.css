@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300');
 /* @import url('https://fonts.googleapis.com/css?family=Raleway:100,600'); */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400&subset=cyrillic');
+
+/* Pacifico */
+@import url('https://fonts.googleapis.com/css?family=Pacifico&subset=cyrillic');
+/* font-family: 'Pacifico', cursive; */
+
 body {
   font-family: 'Lato', sans-serif;
   color: #333;
@@ -223,9 +228,29 @@ a:not([href]):not([tabindex]):hover {
 .navbar-light .navbar-toggler i {
   color: #333!important;
 }
+.contact-top {
+  text-align: center;
+  cursor: pointer;
+}
+
 /* ==========================================================================
    Hero Area Style
    ========================================================================== */
+
+
+.soap-text-logo {
+  font-family: 'Pacifico', cursive;
+  font-stretch: ultra-expanded;
+}
+
+.top {
+  font-size: 4.5rem !important;
+}
+
+.lead{
+  font-size: 2rem !important;
+}
+
 #hero-area {
   background: url(../img/hero-area.jpg) fixed no-repeat;
   background-size: cover;
@@ -309,6 +334,7 @@ a:not([href]):not([tabindex]):hover {
 #video-area {
   overflow: hidden;
   position: relative;
+  height: 100vh;
 }
 #video-area .contents {
   padding: 160px 0 80px;
@@ -1212,3 +1238,6 @@ footer {
     -webkit-transform: scale(1);
   }
 }
+
+
+
