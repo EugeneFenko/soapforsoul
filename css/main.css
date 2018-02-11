@@ -244,7 +244,13 @@ a:not([href]):not([tabindex]):hover {
 }
 
 .top {
-  font-size: 4.5rem !important;
+  font-size: 2.5rem !important;
+}
+
+@media(min-width:576px){
+  .top {
+    font-size: 4.5rem !important;
+  }
 }
 
 .lead{
