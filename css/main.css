@@ -157,6 +157,9 @@ a:not([href]):not([tabindex]):hover {
   background: #4676fa;
   left: 27px;
 }
+.center {
+  text-align: center;
+}
 /* ==========================================================================
    Navbar Style
    ========================================================================== */
@@ -258,7 +261,7 @@ a:not([href]):not([tabindex]):hover {
 }
 
 #hero-area {
-  background: url(../img/hero-area.jpg) fixed no-repeat;
+  background: url(../img/back.png) fixed no-repeat;
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -975,7 +978,7 @@ a:not([href]):not([tabindex]):hover {
   width: 100%;
   margin-bottom: 20px;
   padding: 18px;
-  color: #fff;
+  color: #333;
   font-size: 14px;
   border-radius: 4px;
   -webkit-transition: all 0.3s;
