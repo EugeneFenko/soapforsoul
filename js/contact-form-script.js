@@ -1,17 +1,4 @@
 $("#contactForm").validator().on("submit", function (event) {
-    if (event.isDefaultPrevented()) {
-        // handle the invalid form...
-        formError();
-        submitMSG(false, "Вы что-то пропустили..");
-    } else {
-        // everything looks good!
-        event.preventDefault();
-        submitForm();
-    }
-});
-
-
-function submitForm(){
     // Initiate Variables With Form Content
     var name = $("#name").val();
     var email = $("#email").val();
@@ -19,20 +6,46 @@ function submitForm(){
     var message = $("#message").val();
 
 
-    $.ajax({
-        type: "POST",
-        url: "php/form-process.php",
-        data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
-        success : function(text){
-            if (text == "success"){
-                formSuccess();
-            } else {
-                formError();
-                submitMSG(false,text);
-            }
-        }
-    });
-}
+    if (event.isDefaultPrevented()) {
+        // handle the invalid form...
+        formError();
+        submitMSG(false, "Вы что-то пропустили..");
+    } else {
+        // everything looks good!
+        event.preventDefault();
+        Email.send(
+            email,
+            "softoverlordos@gmail.com",
+            msg_subject,
+            message,
+            "smtp.yandex.ru",
+            {token:"8f8e915c-82a1-40cd-ad7a-d1af232c7751"}
+            );
+            console.log("sent");
+    }
+});
+
+
+// function submitForm(){
+    
+
+
+//     $.ajax({
+//         type: "POST",
+//         url: "php/form-process.php",
+//         data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
+//         success : function(text){
+//             if (text == "success"){
+//                 formSuccess();
+//             } else {
+//                 formError();
+//                 submitMSG(false,text);
+//             }
+//         }
+//     });
+// }
+
+
 
 function formSuccess(){
     $("#contactForm")[0].reset();
