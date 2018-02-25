@@ -795,19 +795,19 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" placeholder="Ваш Email" id="email" class="form-control" name="name" required data-error="Пожалуйста, введите Ваш email">
+                    <input type="text" placeholder="Ваш Email" id="email" class="form-control" name="_replyto" required data-error="Пожалуйста, введите Ваш email">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
-                    <input type="text" placeholder="Тема сообщения" id="msg_subject" class="form-control" required data-error="Пожалуйста, введите Вашу тему сообщения">
+                    <input type="text" placeholder="Тема сообщения" id="msg_subject" name="_subject" class="form-control" required data-error="Пожалуйста, введите Вашу тему сообщения">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
-                    <textarea class="form-control" placeholder="Ваше сообщение" rows="11" data-error="Пожалуйста, введите Ваше сообщение" required></textarea>
+                    <textarea class="form-control" name="message" placeholder="Ваше сообщение" rows="11" data-error="Пожалуйста, введите Ваше сообщение" required></textarea>
                     <div class="help-block with-errors"></div>
                   </div>
                   <div class="submit-button text-center">
@@ -910,7 +910,6 @@
   </div>
 
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
-  <script src="js/smtp.js"></script>
   <script src="js/jquery-min.js"></script>
   <script src="js/tether.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

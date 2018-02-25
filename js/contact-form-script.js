@@ -1,9 +1,5 @@
 $("#contactForm").validator().on("submit", function (event) {
-    // Initiate Variables With Form Content
-    var name = $("#name").val();
-    var email = $("#email").val();
-    var msg_subject = $("#msg_subject").val();
-    var message = $("#message").val();
+
 
 
     if (event.isDefaultPrevented()) {
@@ -13,37 +9,33 @@ $("#contactForm").validator().on("submit", function (event) {
     } else {
         // everything looks good!
         event.preventDefault();
-        Email.send(
-            email,
-            "softoverlordos@gmail.com",
-            msg_subject,
-            message,
-            "smtp.yandex.ru",
-            {token:"8f8e915c-82a1-40cd-ad7a-d1af232c7751"}
-            );
-            console.log("sent");
+        submitForm();
     }
 });
 
 
-// function submitForm(){
-    
+function submitForm(){
+        // Initiate Variables With Form Content
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var msg_subject = $("#msg_subject").val();
+        var message = $("#message").val();
 
 
-//     $.ajax({
-//         type: "POST",
-//         url: "php/form-process.php",
-//         data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
-//         success : function(text){
-//             if (text == "success"){
-//                 formSuccess();
-//             } else {
-//                 formError();
-//                 submitMSG(false,text);
-//             }
-//         }
-//     });
-// }
+    $.ajax({
+        type: "POST",
+        url: "https://formspree.io/softoverlordos@email.com",
+        data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
+        success : function(text){
+            if (text == "success"){
+                formSuccess();
+            } else {
+                formError();
+                submitMSG(false,text);
+            }
+        }
+    });
+}
 
 
 
