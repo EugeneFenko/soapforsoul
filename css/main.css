@@ -1263,3 +1263,13 @@ footer {
 .pink-shadow {
   text-shadow: #222 -1px -1px 1px;
 }
+
+.followUsInstagram {
+  font-size: 4rem;
+  color:white;
+}
+
+.cont {
+  font-size: 3rem;
+  color: #ff4081;
+}
