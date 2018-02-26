@@ -125,7 +125,7 @@ a:not([href]):not([tabindex]):hover {
   font-size: 42px;
   margin-top: 0;
   text-transform: uppercase;
-  font-weight: 100;
+  font-weight: 400;
   color: #0d3559;
   position: relative;
 }
@@ -135,8 +135,9 @@ a:not([href]):not([tabindex]):hover {
 .section-header .section-subtitle {
   margin-top: 15px;
   color: #333;
-  font-size: 14px;
   font-weight: 400;
+  font-family: 'Pacifico', cursive;
+  font-size: 1rem 
 }
 .section-header .lines {
   margin: auto;
@@ -167,7 +168,7 @@ a:not([href]):not([tabindex]):hover {
   background-color: #fff;
 }
 .logo-menu a {
-  font-size: 20px;
+  font-size: 1.5rem;
   color: #fff;
 }
 .menu-bg {
@@ -407,7 +408,7 @@ a:not([href]):not([tabindex]):hover {
   width: 60px;
   height: 60px;
   text-align: center;
-  border: 1px solid #4676fa;
+  /* border: 1px solid #4676fa; */
   display: inline-block;
   border-radius: 5px;
   margin-top: 10px;
@@ -417,7 +418,7 @@ a:not([href]):not([tabindex]):hover {
   transition: all 0.3s ease-in-out;
 }
 .item-boxes .icon i {
-  font-size: 30px;
+  font-size: 60px;
   line-height: 60px;
   color: #4676fa;
 }
@@ -729,6 +730,7 @@ a:not([href]):not([tabindex]):hover {
   color: #fff;
   font-size: 30px;
   text-transform: uppercase;
+  font-weight: 300;
 }
 .video-promo .video-promo-content p {
   margin-bottom: 30px;
@@ -779,9 +781,9 @@ a:not([href]):not([tabindex]):hover {
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
 }
 .pricing-table .icon {
-  font-size: 26px;
+  font-size: 3.2rem;
   color: #4676fa;
-  border: 1px solid #4676fa;
+  /* border: 1px solid #4676fa; */
   border-radius: 4px;
   width: 64px;
   height: 64px;
