@@ -111,7 +111,7 @@ a:not([href]):not([tabindex]) {
 }
 a:not([href]):not([tabindex]):focus,
 a:not([href]):not([tabindex]):hover {
-  color: #4676fa;
+  color: #ff4081;
 }
 .section {
   padding: 80px 0;
@@ -130,7 +130,7 @@ a:not([href]):not([tabindex]):hover {
   position: relative;
 }
 .section-header .section-title span {
-  color: #4676fa;
+  color: #ff4081;
 }
 .section-header .section-subtitle {
   margin-top: 15px;
@@ -155,7 +155,7 @@ a:not([href]):not([tabindex]):hover {
   top: -10px;
   border: 4px solid #fff;
   border-radius: 50%;
-  background: #4676fa;
+  background: #ff4081;
   left: 27px;
 }
 .center {
